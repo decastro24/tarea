@@ -35,7 +35,12 @@ public class CCuenta {
         saldo = saldo - cantidad;
     }
 
-    // Método para operar con la cuenta
+    /**
+     * Método para retirar dinero de la cuenta.
+     *
+     * @param cantidad La cantidad de dinero a retirar.
+     * @throws Exception Si se intenta retirar una cantidad negativa o si no hay suficiente saldo.
+     */
     public void operativaCuenta(double cantidad) {
         try {
             System.out.println("Saldo actual: " + estado());
